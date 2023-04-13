@@ -40,12 +40,24 @@ function ejemploLet() {
 // lo que resulta en un error ya que una variable definida como const no puede ser redefinida.
 // Cuando se imprime x fuera del bloque if, el valor es el original de 10. 
 // La variable x definida con const es inmutable y su valor no puede ser modificado después de su definición.
+
 function ejemploConst() {
+    // ambito General  
     const x = 10;
+
+    // ambito 1
     if (true) {
-      const x = 20;
+      const x = 30.2
       console.log(x);
     }
+
+    // ambito 2
+    if(true){
+      const x = "Hola";
+      console.log(x)
+    }
+
+
     console.log(x); // 10
   }
   
@@ -56,5 +68,15 @@ function ejemploConst() {
 // var tiene alcance funcional y puede ser redefinido, let tiene alcance de bloque y puede ser redefinido, 
 // mientras que const también tiene alcance de bloque pero no puede ser redefinido después de su declaración inicial.
 
+  const nombre = [1,3,4,5,6];
 
-  
+  if(true){
+    const nombre = "Pedro";
+  }
+
+  nombre.push(90)
+  console.log(nombre)
+
+
+
+

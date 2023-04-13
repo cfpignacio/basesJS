@@ -80,7 +80,6 @@ console.log(obtenerHeroeById(3))
 
 
 // Migrar a funcion flecha
-
 function obtenerHeroeByName(name)  {
     return heroes.find(h => h.name == name)
 }
