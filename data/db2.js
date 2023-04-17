@@ -7,3 +7,8 @@ const usuarios = [
 ];
 
 // crear funcion flecha findUserByEmail(email), la misma tiene que devolver un usuario
+
+export const findUserByEmail = (email) =>
+	usuarios.find((u) => u.Email == email);
+
+export const createUser = (usuario) => usuarios.push(usuario);
